@@ -1,0 +1,36 @@
+Ótimo! Vamos detalhar a criação da feature "Adicionar Coluna Ativo". 
+
+**Informações do Requisito:**
+
+* **Nome:** Adicionar Coluna Ativo
+
+* **Tipo:**  Melhoria
+
+* **Responsável:** Alfredo Holz Junior
+
+* **Data de Início:** 2024-09-30
+
+* **Data de Término:** 2024-10-04
+
+* **Descrição da Atividade:** Implementar uma nova coluna chamada "ativo" na tabela "filial", com um valor booleano (true/false), para indicar se a filial está ativa ou inativa. Esta mudança deve ser feita no model, incluido a migration.
+
+* **Prioridade:** Média
+
+* **Alterar Views?**  Sim
+    * Quais Views serão alteradas? Lista de filiais e auditoria de PDVs
+
+* **Existe um Arquivo de Exemplo?**  Não.
+
+* **Endpoint Necessário:** Sim
+    Endpoint da filial, adicionar o filtro ativo se necessario.
+    * A documentação do Swagger deve ser atualizada para incluir os endpoints necessários para essa feature. Quais endpoints serão afetados? [Especifique os endpoints]
+
+**Testes:**
+
+* **Verificação da Funcionalidade:** Realizar testes para garantir que a nova coluna "ativo" seja exibida corretamente na tabela "filial".
+
+* **Validação de Dados:** Validar se o valor booleano (true/false) é registrado corretamente e se a funcionalidade está funcionando conforme esperado.
+
+**Outras Informações Requeridas:**
+
+1. **Considerar a integridade dos dados existentes:** Quais medidas serão tomadas para garantir que os dados antigos da tabela "filial" sejam preservados durante a implementação dessa feature?
