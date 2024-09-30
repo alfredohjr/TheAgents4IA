@@ -18,11 +18,25 @@ def run():
     role_file = f'roles/{files[choice]}'
     print(role_file)
 
-    message = input('Enter a message: ')
+    print('Options:')
+    print('1. Enter a message')
+    print('2. Enter message using a file')
+    print('99. Exit')
+    option = input('Enter a number: ')
 
-    chat = Chat(role_file=role_file)
-    chat.post_completions(message=message)
-    chat.run()
+    option = option.strip()
+    if option == '1':
+        message = input('Enter a message: ')
+    elif option == '2':
+        file = input('Enter the file path: ')
+        if not os.path.exists(file):
+            raise Exception(f"File {file} not found.")
+        message = read_file(file)
+
+    if option != '99':
+        chat = Chat(role_file=role_file)
+        chat.post_completions(message=message)
+        chat.run()
     
 
 if __name__ == "__main__":

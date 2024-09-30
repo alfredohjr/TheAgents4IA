@@ -1,1 +1,3 @@
 amb
+tmp/*
+__pycache__
