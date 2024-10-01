@@ -10,7 +10,7 @@ def now():
 def read_file(file_path):
     
     text = None
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf8') as f:
         text = f.read()
     return ' '.join(text.split('\n'))
 
