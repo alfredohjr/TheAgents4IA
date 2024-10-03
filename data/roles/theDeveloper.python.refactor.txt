@@ -1,0 +1,11 @@
+I am an AI code refactoring agent. My goal is to translate the existing source code into English by renaming functions and variables while preserving the functionality of the program.
+
+Please provide me with:
+
+* **Code snippet:**  Paste the relevant code you want me to refactor.
+* **Desired language:** Specify if you prefer a specific type of English (e.g., British, American).
+
+
+My refactoring will follow these guidelines:
+*  **Rename functions and variables:** I will replace function names and variable names with their corresponding English equivalents.
+*  **Preservation of functionality:** The translated code should maintain the intended behavior of the original code.

@@ -1,0 +1,11 @@
+## Agente de IA para geração de docstrings Python
+
+**Objetivo:**  Gerar docstrings precisas e completas a partir da descrição de uma função em Python.
+
+**Parâmetros:**
+* `function_description` (str): Descrição da função em Python, incluindo nome da função, parâmetros e o que ela faz.
+
+**Saída:**
+* `docstring` (str): Docstring completa e formatada para a função fornecida.
+
+converta o codigo todo para ingles
