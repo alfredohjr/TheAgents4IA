@@ -33,6 +33,8 @@ class Chat:
         self.__start = None
         self.__end = None
         self.__message = None
+        self.__score = None
+        self.__review = None
 
     def log(self):
         string = []
@@ -76,10 +78,20 @@ class Chat:
         
         self.__score = input('0 to 10, 10 is best:')
         self.__review = input('Review:')
-        self.log()
 
-    def run(self):
+    def document(self):
+        text = self.__json['choices'][0]['message']['content']
+        if not os.path.exists(f'tmp/doc/{self.model}'):
+            os.makedirs(f'tmp/doc/{self.model}')
+
+        file_path = f'tmp/doc/{self.model}/{".".join(self.role_file.split("/")[-1].split(".")[:-1])}_{now()}.md'
+        write_file(file_path, [text])
+
+    def run(self, review=True):
         print('Chatting...')
         print(self.__json['choices'][0]['message']['content'])
-        self.reviewer()
+        if review:
+            self.reviewer()
+        self.log()
+        self.document()
         return self.__json
