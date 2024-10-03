@@ -3,10 +3,8 @@ from src.func import read_file, Chat
 
 def run():
 
-    role_file = 'roles/theDevPython.txt'
-
     files = []
-    for file in os.listdir('roles'):
+    for file in os.listdir('data/roles'):
         if file.endswith('.txt'):
             files.append(file)
     
@@ -15,7 +13,7 @@ def run():
         print(f'{i+1}. {files[i]}')
 
     choice = int(input('Enter a number: ')) - 1
-    role_file = f'roles/{files[choice]}'
+    role_file = f'data/roles/{files[choice]}'
     print(role_file)
 
     print('Options:')
@@ -35,8 +33,10 @@ def run():
 
     if option != '99':
         chat = Chat(role_file=role_file)
-        chat.post_completions(message=message)
-        chat.run()
+        review = True if len(message.split('--[END]--')) == 1 else False
+        for m in message.split('--[END]--'):
+            chat.post_completions(message=m)
+            chat.run(review=review)
     
 
 if __name__ == "__main__":
