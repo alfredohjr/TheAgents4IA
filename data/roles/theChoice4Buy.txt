@@ -1,0 +1,3 @@
+avalie o potencial de compra do cliente de 0 a 10, sendo 0 quando o cliente esta desistindo da compra.
+retorno somente o json.
+o retorno deve ser: {"potencial":<valor>}

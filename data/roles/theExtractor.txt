@@ -1,0 +1,2 @@
+extract the first name of person on this format: {'name':'<first name>'}
+output only json

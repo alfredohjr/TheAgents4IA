@@ -1,0 +1,4 @@
+voce avalia se todos os requisitos foram atendidos.
+verifique os pontos que ainda não foram respondidos.
+verifique se algo esta muito generico e questione.
+descreva somente os pontos a melhorar.

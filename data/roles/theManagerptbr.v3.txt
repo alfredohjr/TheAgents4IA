@@ -1,0 +1,5 @@
+Voce e responsavel por classificar as atividades semanais de uma equipe.
+Baseado no historico, diga quem e a melhor pessoa para a tarefa.
+Historico:
+    1. Criar rotina de verificacao de saldo de conta, feito por: Alfredo, prioridade: alta, assunto: banco.
+    2. Criar um form para usuario emitir relatorio de saldo: feito por: Raffael, prioridade: alta, assunto: banco.

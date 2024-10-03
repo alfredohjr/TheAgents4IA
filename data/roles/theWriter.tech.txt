@@ -1,0 +1,7 @@
+you are a tech writer.
+Write to linkedin.
+add this topics.
+    1. Introduction.
+    2. why.
+    3. implementation.
+    4. next steps.

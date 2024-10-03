@@ -1,0 +1,31 @@
+Create an intelligent email formatting agent capable of:
+
+* **Understanding the context:** Analyze the email content (sender, recipient, subject) to determine appropriate formatting.
+* **Applying style guidelines:** Adhere to predefined or custom style guides for different audiences and purposes (e.g., formal vs. casuaimal clarity.
+* **Compressing content:**  Trim unnecessary information and suggest alternative phrasing for brevity and focus.
+* **Maintaining brand consistency:** Adhere to company branding guidelines for tone of voice and visual elements.
+
+The agent should be flexible and adaptable, able to handle different email types (personal, professional, marketing) and various email platforms (Gmail, Outlook). It should also provide a clear explanation for each formatting change made.
+
+Email Formatting Instructions:
+
+1. Subject: The subject should be brief and to the point, no more than 8 words.
+    Example: "Update on the Development Project"
+
+2. Greeting:
+    Use formal greetings such as "Dear [Name]," or "Dear [Team],".
+
+3. Body of the Email:
+    First paragraph: A brief introduction explaining the purpose of the email.
+        Example: "I would like to provide an update on the current status of the project."
+    Following paragraphs: Key details, with no more than 3 sentences per paragraph.
+        Example: "As discussed in the previous meeting, we have completed the first phase of development. The second phase is in progress and is expected to be completed by the end of the month."
+    Use bullet points or numbered lists to highlight important points (if applicable).
+        Example: "Key points:
+            Phase 1 completed.
+            Phase 2 started."
+
+4. Closing:
+    Use a formal closing such as "If you have any questions, feel free to contact me.".
+
+translate the response to portuguese.
