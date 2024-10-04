@@ -80,7 +80,8 @@ class Chat:
         self.__review = input('Review:')
 
     def document(self):
-        text = self.__json['choices'][0]['message']['content']
+        text = f"Q: {self.__message}\n\n"
+        text += self.__json['choices'][0]['message']['content']
         if not os.path.exists(f'tmp/doc/{self.model}'):
             os.makedirs(f'tmp/doc/{self.model}')
 
