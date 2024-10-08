@@ -11,7 +11,8 @@ def basic_chat(template:list, stream=True, question:str=None):
     
     __llm = ChatOpenAI(base_url=__BASE_URL, api_key=__API_KEY, model=__MODEL)
 
-    __prompt = ChatPromptTemplate(template)
+    __prompt = ChatPromptTemplate(
+        template + [("user","{question}")])
 
     __chain = __prompt | __llm | StrOutputParser()
 
